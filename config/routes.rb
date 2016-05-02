@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  devise_for :users
+  root 'top#index'
+  resources :users, only: [:show] do
+    resources :pictures
+    resources :forms
+    resources :historyposts
+    resources :messageposts
+  end
+
+  get 'service_introduction' => 'top#service_introduction'
+  get 'service_guide' => 'top#service_guide'
+
+
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +67,3 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end

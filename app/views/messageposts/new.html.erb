@@ -1,0 +1,15 @@
+<div>
+    <%= form_for [@user, @messagepost] do |f| %>
+        <div >
+          <%= f.label :dear, "あて名" %></br>
+          <%= f.text_field :dear, placeholder: "あて名"%>
+        </div>
+        <div >
+          <%= f.label :text, "メッセージ" %></br>
+          <%= f.text_area :text, placeholder: "メッセージ", size: "100x50" %>
+        </div>
+        <div>
+          <%= f.submit "保存" %>
+        </div>
+    <% end %>
+</div>

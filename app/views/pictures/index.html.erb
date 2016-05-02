@@ -1,0 +1,12 @@
+写真の表示ができるページ
+
+<div>
+  <% current_user.pictures.each do |picture| %>
+    <p><%= picture.title %></p>
+    <img src="<%= picture.portrait %>">
+  <% end %>
+</div>
+
+<div>
+  <a href="/users/<%= current_user.id %>/pictures/new">写真を保存する</a>
+</div>

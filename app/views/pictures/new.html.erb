@@ -1,0 +1,15 @@
+<div>
+    <%= form_for [@user, @picture] do |f| %>
+        <div >
+          <%= f.label :title, "タイトル" %></br>
+          <%= f.text_field :title, placeholder: "タイトル"%>
+        </div>
+        <div >
+           <%= f.label :portrait, "写真" %></br>
+           <%= f.file_field :portrait %>
+        </div>
+        <div>
+          <%= f.submit "保存" %>
+        </div>
+    <% end %>
+</div>

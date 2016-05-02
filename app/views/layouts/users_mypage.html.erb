@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <h1 class='inline'><a href="/">Endingnote</a></h1>
+    <h1 class='inline'><%= current_user.name %> <span>さんのマイページ</span></h1>
 
     <% if user_signed_in? %>
 
@@ -40,9 +40,9 @@
 
     <div class="navbar">
       <ul class='float_right'>
-        <li class='li_float_left'><a href="/service_introduction">Endingnoteとは</a></li>
-        <li class='li_float_left'><a href="/service_guide">サービスのご案内</a></li>
-        <li class='li_float_left'>その他</li>
+        <li class='li_float_left'><a href="/users/<%= current_user.id %>/pictures">写真UPLOAD</a></li>
+        <li class='li_float_left'><a href="#">Ending info</a></li>
+        <li class='li_float_left'><a href="/users/<%= current_user.id %>/messageposts">Message</a></li>
       </ul>
     </div>
 

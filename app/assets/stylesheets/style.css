@@ -1,0 +1,48 @@
+header,
+footer {
+  display: block;
+  background-color: #FFFACD;
+  /*width: 960px;*/
+  margin: 0 auto;
+}
+
+header{
+  height: auto;
+}
+
+footer {
+  height: auto;
+}
+
+.navbar{
+  height: 50px;
+}
+
+.inline {display: inline;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.float_left {
+  margin: 0;
+  float: left;
+}
+
+.float_right {
+  margin: 0;
+  float: right;
+}
+
+.li_float_left {
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+}
+
+.footer_letter{
+  text-align: center;
+}
