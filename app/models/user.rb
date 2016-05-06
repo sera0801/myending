@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
 
   has_many :messageposts
   has_many :pictures
+  has_one  :form
 end

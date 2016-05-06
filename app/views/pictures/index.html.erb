@@ -4,6 +4,11 @@
   <% current_user.pictures.each do |picture| %>
     <p><%= picture.title %></p>
     <img src="<%= picture.portrait %>">
+
+    <li>
+        <%= link_to '削除', user_picture_path(current_user, picture), method: :delete %>
+    </li>
+
   <% end %>
 </div>
 

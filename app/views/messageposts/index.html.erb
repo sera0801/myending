@@ -4,8 +4,20 @@ messagepostの表示ができるページ
   <% current_user.messageposts.each do |messagepost| %>
     <p><%= messagepost.dear %></p>
     <p><%= simple_format(messagepost.text) %></p>
+
+  <div>
+    <ul>
+      <li>
+        <%= link_to '編集', edit_user_messagepost_path(current_user, messagepost), method: :get %>
+      </li>
+      <li>
+        <%= link_to '削除', user_messagepost_path(current_user, messagepost), method: :delete %>
+      </li>
+    </ul>
+  </div>
   <% end %>
 </div>
+
 
 <div>
   <a href="/users/<%= current_user.id %>/messageposts/new">メッセージを作成する</a>

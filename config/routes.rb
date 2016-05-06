@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'top#index'
   resources :users, only: [:show] do
     resources :pictures
-    resources :forms
+    resource :form
     resources :historyposts
     resources :messageposts
   end

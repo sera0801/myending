@@ -1,30 +1,13 @@
-header,
-footer {
-  display: block;
-  background-color: #FFFACD;
-  /*width: 960px;*/
-  margin: 0 auto;
+
+p, a {
+  color: black;
+  font-family: "Arial","メイリオ","ヒラギノ角ゴ Pro","ＭＳ Ｐゴシック","sans-serif";
 }
 
-header{
-  height: auto;
-}
 
-footer {
-  height: auto;
-}
-
-.navbar{
-  height: 50px;
-}
-
-.inline {display: inline;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+header {
+  height: 100px;
+  background-color: white;
 }
 
 .float_left {
@@ -37,12 +20,54 @@ ul {
   float: right;
 }
 
-.li_float_left {
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+header ul li {
   margin: 0;
   float: left;
+  list-style: none;
   padding-right: 10px;
 }
 
-.footer_letter{
+.emphasis_box {
+  padding: 10px 20px 10px 20px;
+  border: 2px solid black;
+}
+
+header div {
+  margin-top: 40px;
+  margin-right: 10px;
+}
+
+
+footer {
+  height: 230px;
+  background-color: #95badf;
+}
+
+footer {
+  color: white;
+}
+
+footer a, p {
+  color: white;
+}
+
+footer ul li {
+  margin: 0;
+  float: left;
+  list-style: none;
+  padding-right: 10px;
+}
+
+footer p {
   text-align: center;
+}
+
+.bottom_position {
+  bottom: 30px;
 }

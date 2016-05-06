@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+
+
 <head>
   <title>Endingnote</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -8,62 +10,73 @@
 </head>
 
 
-
 <body>
-  <header>
-    <h1 class='inline'><a href="/">Endingnote</a></h1>
 
-    <% if user_signed_in? %>
+    <header>
 
-    <ul class='float_right'>
-      <li class='li_float_left'>
-        <%= current_user.name %>
-      </li>
-      <li class='li_float_left'>
-        <a href="/users/<%= current_user.id %>">マイページ</a>
-      </li>
-      <li class='li_float_left'>
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-      </li>
-    </ul>
+    <div class= "clearfix">
+      <div class= "float_right">
+          <ul>
+           <% if user_signed_in? %>
+              <!-- <li>
+                <%= current_user.name %>
+              </li> -->
+              <li>
+                <a href="/users/<%= current_user.id %>", class= "emphasis_box">My Page</a>
+              </li>
+              <li>
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "emphasis_box" %>
+              </li>
 
-    <% else %>
-    <ul class='float_right'>
-      <li class='li_float_left'>
-      <%= link_to "ログイン", new_user_session_path %>
-    </li>
-    <li class='li_float_left'>
-      <%= link_to "新規登録", new_user_registration_path %>
-    </li>
-    </ul>
-    <% end %>
+            <% else %>
+              <li>
+              <%= link_to "ログイン", new_user_session_path, class: "emphasis_box"  %>
+              </li>
+              <li>
+              <%= link_to "新規登録", new_user_registration_path, class: "emphasis_box" %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
 
-    <div class="navbar">
-      <ul class='float_right'>
-        <li class='li_float_left'><a href="/service_introduction">Endingnoteとは</a></li>
-        <li class='li_float_left'><a href="/service_guide">サービスのご案内</a></li>
-        <li class='li_float_left'>その他</li>
-      </ul>
+    <div class= "clearfix">
+      <div class= "float_right">
+          <ul>
+              <li><a href="/service_introduction">Endingnoteとは</a></li>
+              <li><span style="margin-right: 2em;"></span>/<span style="margin-right: 2em;"></span><a href="/service_guide">サービスのご案内</a></li>
+              <li><span style="margin-right: 2em;"></span>/<span style="margin-right: 2em;"></span><a href="#">その他</a></li>
+              <li><span style="margin-right: 2em;"></span>/<span style="margin-right: 2em;"></span><a href="#">Contact</a></li>
+          </ul>
+      </div>
     </div>
 
-  </header>
-
-<%= yield %>
+    </header>
 
 
-    <footer>
-      <ul>
-        <li class='li_float_left'><a href="/">トップページ</a></li>
-        <li class='li_float_left'><a href="/service_introduction">Endingnoteとは</a></li>
-        <li class='li_float_left'><a href="/service_guide">サービスのご案内</a></li>
-        <li class='li_float_left'>その他１</li>
-        <li class='li_float_left'>その他２</li>
-        <li class='li_float_left'>その他３</li>
-      </ul></br>
-      <p class='footer_letter'>
-        Copyright (c) 2016 Endingnote All Rights Reserved
-      </p>
-    </footer>
+  <%= yield %>
+
+
+<footer>
+      <div>
+          <ul>
+              <li><a href="/service_introduction">Endingnoteとは</a></li>
+              <li><span style="margin-right: 2em;"></span>/<span style="margin-right: 2em;"></span><a href="/service_guide">サービスのご案内</a></li>
+              <li><span style="margin-right: 2em;"></span>/<span style="margin-right: 2em;"></span><a href="#">その他</a></li>
+              <li><span style="margin-right: 2em;"></span>/<span style="margin-right: 2em;"></span><a href="#">Contact</a></li>
+          </ul>
+      </div>
+
+      <div>
+        <p>Endingnoteは株式会社リクルートマーケティングパートナーズが運営する終活サービスです。</p>
+      </div>
+
+     <div>
+        <p>Copyright © 2016 Endingnote All Rights Reserved</p>
+     </div>
+
+</footer>
+
 
 </body>
 

@@ -2,7 +2,6 @@ class PicturesController < ApplicationController
     layout 'users_mypage'
 
     def index
-      @pictures = Picture.all
     end
 
     def new
@@ -12,6 +11,11 @@ class PicturesController < ApplicationController
 
     def create
       Picture.create(picture_params)
+    end
+
+    def destroy
+      picture = Picture.find(params[:id])
+      picture.destroy
     end
 
     private
