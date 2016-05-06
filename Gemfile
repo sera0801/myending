@@ -48,11 +48,10 @@ group :development do
   gem 'rails_12factor'
   end
 
-  gem 'devise'
-
   gem 'pry-rails'
 
-  gem 'paperclip'
 
 end
 
+  gem 'paperclip'
+  gem 'devise'
