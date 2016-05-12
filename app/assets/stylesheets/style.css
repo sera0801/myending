@@ -6,8 +6,14 @@ p, a {
 
 
 header {
-  height: 100px;
+  /*height: 100px;*/
   background-color: white;
+}
+
+.mypage_header {
+  background-color: #95badf;
+  height: 150px;
+
 }
 
 .float_left {
@@ -38,22 +44,18 @@ header ul li {
   border: 2px solid black;
 }
 
-header div {
-  margin-top: 40px;
-  margin-right: 10px;
+.header_div {
+  margin: 30px 10px 20px 0px;
 }
 
 
 footer {
   height: 230px;
+  width: 100%;
   background-color: #95badf;
 }
 
-footer {
-  color: white;
-}
-
-footer a, p {
+footer a, footer p {
   color: white;
 }
 
@@ -68,6 +70,15 @@ footer p {
   text-align: center;
 }
 
-.bottom_position {
-  bottom: 30px;
+footer {
+  padding: 20px;
 }
+
+footer div {
+  width: 70%;
+  margin: 30px auto 50px auto;
+}
+
+
+
+

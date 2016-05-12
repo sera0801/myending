@@ -5,53 +5,51 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 
 
 <body>
-  <header>
-    <h1 class='inline'><%= current_user.name %> <span>さんのマイページ</span></h1>
+  <header class= "mypage_header">
 
-    <% if user_signed_in? %>
+    <div class= "clearfix">
+      <div class= "float_right header_div">
+          <ul>
+              <li>
+                <a href="/users/<%= current_user.id %>"> <%= current_user.name %> さま</a><span style="margin-right: 1em;"></span>
+              </li>
+              <li>
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "emphasis_box" %>
+              </li>
+          </ul>
+        </div>
+      </div>
 
-    <ul class='float_right'>
-      <li class='li_float_left'>
-        <%= current_user.name %>
-      </li>
-      <li class='li_float_left'>
-        <a href="/users/<%= current_user.id %>">マイページ</a>
-      </li>
-      <li class='li_float_left'>
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-      </li>
-    </ul>
 
-    <% else %>
-    <ul class='float_right'>
-      <li class='li_float_left'>
-      <%= link_to "ログイン", new_user_session_path %>
-    </li>
-    <li class='li_float_left'>
-      <%= link_to "新規登録", new_user_registration_path %>
-    </li>
-    </ul>
-    <% end %>
 
-    <div class="navbar">
-      <ul class='float_right'>
-        <li class='li_float_left'><a href="/users/<%= current_user.id %>/pictures">写真UPLOAD</a></li>
-        <li class='li_float_left'><a href="/users/<%= current_user.id %>/form">Ending Info</a></li>
-        <li class='li_float_left'><a href="/users/<%= current_user.id %>/messageposts">Message</a></li>
-      </ul>
-    </div>
+     <div class= "clearfix">
+        <div class= "float_right header_div">
+            <ul>
+                <li><a href="/users/<%= current_user.id %>/pictures">写真</a></li>
+
+                <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span>
+                <% if current_user.form.present? %>
+                  <a href="/users/<%= current_user.id %>/form">Ending Form</a>
+                <% else %>
+                  <a href="/users/<%= current_user.id %>/form/new">Ending Form</a>
+                <% end %>
+                </li>
+                <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="/users/<%= current_user.id %>/messageposts">メッセージ</a></li>
+            </ul>
+        </div>
 
   </header>
 
-<%= yield %>
+  <%= yield %>
 
 
-    <footer>
+   <!--  <footer>
       <ul>
         <li class='li_float_left'><a href="/">トップページ</a></li>
         <li class='li_float_left'><a href="/service_introduction">Endingnoteとは</a></li>
@@ -64,7 +62,7 @@
         Copyright (c) 2016 Endingnote All Rights Reserved
       </p>
     </footer>
-
+ -->
 </body>
 
 </html>

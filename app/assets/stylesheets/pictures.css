@@ -1,0 +1,26 @@
+.picture_index {
+  margin: 0 auto;
+}
+
+.picture_margin {
+  margin-top: 60px;
+}
+
+.picture_index h1 {
+  font-size: 22px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.picture_index {
+  width: 90%;
+}
+
+.picture_new  {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.picture_new div {
+  margin: 30px 20px;
+}

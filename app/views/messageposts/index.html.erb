@@ -1,24 +1,33 @@
-messagepostの表示ができるページ
+<div class= "messageposts">
 
-<div>
-  <% current_user.messageposts.each do |messagepost| %>
-    <p><%= messagepost.dear %></p>
-    <p><%= simple_format(messagepost.text) %></p>
+    <h1>残しているメッセージ</h1>
 
-  <div>
-    <ul>
-      <li>
-        <%= link_to '編集', edit_user_messagepost_path(current_user, messagepost), method: :get %>
-      </li>
-      <li>
-        <%= link_to '削除', user_messagepost_path(current_user, messagepost), method: :delete %>
-      </li>
-    </ul>
-  </div>
-  <% end %>
-</div>
+    <div>
+      <% current_user.messageposts.each do |messagepost| %>
+
+        <div class="letter">
+            <h3><%= messagepost.dear %> へ</h3>
+            <hr color= "gray">
+            <%= simple_format(messagepost.text) %>
+        </div>
+
+        <div class="clearfix btn_position">
+            <ul>
+              <li>
+                <%= link_to '編集', edit_user_messagepost_path(current_user, messagepost), method: :get, class: "btn btn-default" %>
+              </li>
+              <li>
+                <%= link_to '削除', user_messagepost_path(current_user, messagepost), method: :delete, class: "btn btn-default" %>
+              </li>
+            </ul>
+        </div>
+      <% end %>
+    </div>
 
 
-<div>
-  <a href="/users/<%= current_user.id %>/messageposts/new">メッセージを作成する</a>
+
+    <div class= "btn_position2">
+      <a href="/users/<%= current_user.id %>/messageposts/new" class= "btn btn-primary btn-lg">メッセージを作成する</a>
+    </div>
+
 </div>

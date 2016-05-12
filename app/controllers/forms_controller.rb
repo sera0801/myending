@@ -2,7 +2,7 @@ class FormsController < ApplicationController
   layout 'users_mypage'
 
   def show
-    @post = Form.find(params[:user_id])
+    @form = Form.find(params[:user_id])
     @user = current_user
   end
 
@@ -75,5 +75,6 @@ class FormsController < ApplicationController
       :q22_d,
       :requests).merge(user_id: current_user.id)
     end
-
 end
+
+

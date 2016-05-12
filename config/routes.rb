@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   get 'service_introduction' => 'top#service_introduction'
   get 'service_guide' => 'top#service_guide'
-
+  get 'logout' => 'top#logout'
 
   end
   # The priority is based upon order of creation: first created -> highest priority.

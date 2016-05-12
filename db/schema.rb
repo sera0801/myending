@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160502095140) do
+ActiveRecord::Schema.define(version: 20160511053631) do
 
   create_table "forms", force: :cascade do |t|
     t.integer  "q1",             limit: 4
@@ -98,6 +98,14 @@ ActiveRecord::Schema.define(version: 20160502095140) do
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
     t.string   "name",                   limit: 255
+    t.string   "kana",                   limit: 255
+    t.integer  "b_year",                 limit: 4
+    t.integer  "b_month",                limit: 4
+    t.integer  "b_day",                  limit: 4
+    t.integer  "sex",                    limit: 4
+    t.integer  "postalcode1",            limit: 4
+    t.integer  "postalcode2",            limit: 4
+    t.string   "address",                limit: 255
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

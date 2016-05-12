@@ -1,17 +1,26 @@
-写真の表示ができるページ
 
-<div>
-  <% current_user.pictures.each do |picture| %>
-    <p><%= picture.title %></p>
-    <img src="<%= picture.portrait %>">
+<div class= "picture_index">
 
-    <li>
-        <%= link_to '削除', user_picture_path(current_user, picture), method: :delete %>
-    </li>
+<h1>保存している写真</h1>
 
-  <% end %>
+ <% current_user.pictures.each do |picture| %>
+
+  <div class="row" >
+    <div class="col-xs-12 col-md-3 picture_margin">
+    <!-- <p><<%= picture.title %>></p> -->
+      <a href="#" class="thumbnail">
+        <img src="<%= picture.portrait %>" alt="写真">
+      </a>
+
+      <%= link_to '削除', user_picture_path(current_user, picture), method: :delete, style: "float: right;"%>
+    </div>
+  <div>
+<% end %>
+
+
+
+<div class= "btn_position2">
+      <a href="/users/<%= current_user.id %>/pictures/new", class= "btn btn-primary btn-lg">写真を保存する</a>
 </div>
 
-<div>
-  <a href="/users/<%= current_user.id %>/pictures/new">写真を保存する</a>
 </div>

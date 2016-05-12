@@ -7,6 +7,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 
@@ -15,7 +16,7 @@
     <header>
 
     <div class= "clearfix">
-      <div class= "float_right">
+      <div class= "float_right header_div">
           <ul>
            <% if user_signed_in? %>
               <!-- <li>
@@ -41,12 +42,12 @@
       </div>
 
     <div class= "clearfix">
-      <div class= "float_right">
+      <div class= "float_right header_div">
           <ul>
               <li><a href="/service_introduction">Endingnoteとは</a></li>
-              <li><span style="margin-right: 2em;"></span>/<span style="margin-right: 2em;"></span><a href="/service_guide">サービスのご案内</a></li>
-              <li><span style="margin-right: 2em;"></span>/<span style="margin-right: 2em;"></span><a href="#">その他</a></li>
-              <li><span style="margin-right: 2em;"></span>/<span style="margin-right: 2em;"></span><a href="#">Contact</a></li>
+              <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="/service_guide">終活コラム</a></li>
+              <!-- <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="#">その他</a></li> -->
+              <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="#">Contact</a></li>
           </ul>
       </div>
     </div>
@@ -57,13 +58,14 @@
   <%= yield %>
 
 
-<footer>
-      <div>
+<!-- <footer>
+
+      <div class= "clearfix">
           <ul>
               <li><a href="/service_introduction">Endingnoteとは</a></li>
-              <li><span style="margin-right: 2em;"></span>/<span style="margin-right: 2em;"></span><a href="/service_guide">サービスのご案内</a></li>
-              <li><span style="margin-right: 2em;"></span>/<span style="margin-right: 2em;"></span><a href="#">その他</a></li>
-              <li><span style="margin-right: 2em;"></span>/<span style="margin-right: 2em;"></span><a href="#">Contact</a></li>
+              <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="/service_guide">サービスのご案内</a></li>
+              <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="#">その他</a></li>
+              <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="#">Contact</a></li>
           </ul>
       </div>
 
@@ -71,13 +73,14 @@
         <p>Endingnoteは株式会社リクルートマーケティングパートナーズが運営する終活サービスです。</p>
       </div>
 
-     <div>
+     <div class= "footer_adj1">
         <p>Copyright © 2016 Endingnote All Rights Reserved</p>
      </div>
 
+
 </footer>
 
-
+ -->
 </body>
 
 </html>

@@ -3,3 +3,54 @@
   width: 960px;
   background-color: #F5F5DC;
 }*/
+
+
+table {
+   font-size:14px;
+   border:1px solid #CCCCCC;
+   width: 85%;
+   margin: 5px auto;
+   }
+
+.table_title {
+  font-size: :20px;
+  color: black;
+}
+
+table th,
+table td {
+  border: 1px solid #CCCCCC;
+  padding:5px 8px;
+}
+
+table th {
+  background-color: #a9a9a9;
+  color: white;
+  width: 150px;
+}
+
+.users_content h1 {
+  font-size: 24px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.img_size2 {
+  width: 80px;
+  height: 80px;
+  display:block;
+  margin: 0 auto;
+}
+
+.userpage_photos li{
+  list-style: none;
+  float: left;
+  margin: 10px auto;
+  width: 33%;
+}
+
+.userpage_photos li h2 {
+  font-size: 14px;
+  text-align: center;
+}
+

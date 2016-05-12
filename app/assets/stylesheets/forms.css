@@ -1,0 +1,28 @@
+.endingform {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.detail_box {
+  border:0;
+  padding:10px;
+  font-size:1.0em;
+  font-family:Arial, sans-serif;
+  color: black;
+  border:solid 1px #ccc;
+  margin:0 0 20px;
+  -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+}
+
+.detail_box_size {
+  width: 90%;
+  height: 200px;
+}
+
+
+.endingform h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}

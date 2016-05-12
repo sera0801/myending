@@ -1,0 +1,76 @@
+
+
+.messageposts ul li {
+  list-style:  none;
+  float: left;
+}
+
+.btn_position {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.messageposts h1 {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.btn_position2 {
+  width: 214px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.input_box_size {
+  width: 90%;
+  height: 500px;
+}
+
+.input_box {
+border:0;
+padding:8px;
+font-size:1.2em;
+font-family:Arial, sans-serif;
+color: black;
+border:solid 1px #ccc;
+margin:0 0 20px;
+-moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+-webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+}
+
+.messageposts_new div{
+  width: 80%;
+  margin: 40px auto;
+}
+
+.messageposts_edit div{
+  width: 80%;
+  margin: 40px auto;
+}
+
+
+div.letter{
+ box-shadow:5px 5px 0px -2px rgba(0, 0, 0, 0.2);;
+ border:1px solid #000;
+ width:75%;
+ /*height:50px;*/
+ margin: 40px auto;
+ padding: 20px;
+}
+
+.panel_adj {
+  width: 75%;
+  margin: 40px auto;
+}
+
+.panel-body p {
+  text-align: center;
+}
+
+.response_text {
+  text-align: center;
+  text-decoration: underline;
+}
+

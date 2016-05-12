@@ -1,4 +1,77 @@
 
 <div class='users_content'>
-ユーザーのぺーじだお
+
+
+    <div class= "userpage_photos clearfix" >
+      <ul>
+        <li>
+        <h2>写真</h2></br>
+        <%= image_tag "picture.jpg", class: "img_size2 img-circle"%></br>
+        </li>
+
+        <li>
+        <h2 style= "font-size: 11px;">エンディングフォーム</h2></br>
+        <%= image_tag "form.jpg", class: "img_size2 img-circle"%></br>
+        </li>
+
+        <li>
+        <h2>メッセージ</h2></br>
+        <%= image_tag "message.jpg", class: "img_size2 img-circle" %></br>
+        <li>
+      </ul>
+    </div>
+
+
+
+<div class="progress" style= "width:70%; margin: 0 auto;">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    60%
+  </div>
+</div>
+
+
+<h1>登録情報</h1>
+  <table>
+      <tr>
+        <th style= "background-color:#404040">登録ID</th>
+        <td>000E<%= current_user.id %></td>
+      </tr>
+      <tr>
+      <th style= "background-color:#404040">登録メールアドレス</br>
+      (ログインID)</th>
+        <td><%= current_user.email %></td>
+      </tr>
+  </table>
+
+  <table>
+      <tr>
+        <th>名前</th>
+        <td><%= current_user.name %></td>
+      </tr>
+      <tr>
+        <th>カナ</th>
+        <td><%= current_user.kana %> </td>
+      </tr>
+      <tr>
+        <th>生年月日</th>
+        <td><%= current_user.b_year %>年<%= current_user.b_month %>月<%= current_user.b_day %>日  </td>
+      </tr>
+      <tr>
+        <th>性別</th>
+        <td><%= current_user.get_sex %> </td>
+      </tr>
+      <tr>
+        <th>郵便番号</th>
+        <td>〒<%= current_user.postalcode1 %>-<%= current_user.postalcode2 %>  </td>
+      <tr>
+        <th>住所</th>
+        <td><%= current_user.address %> </td>
+      </tr>
+  </table>
+
+<div class= "btn_position2">
+      <a href="#" class= "btn btn-primary">登録情報を印刷する</a>
+    </div>
+
+
 </div>
