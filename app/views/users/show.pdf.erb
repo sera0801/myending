@@ -1,36 +1,19 @@
-
-<div class='users_content'>
-
-
-    <div class= "userpage_photos clearfix" >
-      <ul>
-        <li>
-        <h2>写真</h2></br>
-        <%= image_tag "picture.jpg", class: "img_size2 img-circle"%></br>
-        </li>
-
-        <li>
-        <h2 style= "font-size: 12px;">エンディングフォーム</h2></br>
-        <%= image_tag "form.jpg", class: "img_size2 img-circle"%></br>
-        </li>
-
-        <li>
-        <h2>メッセージ</h2></br>
-        <%= image_tag "message.jpg", class: "img_size2 img-circle" %></br>
-        <li>
-      </ul>
-    </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <%= wicked_pdf_stylesheet_link_tag "wickedpdf/cssstyle" %>
+</head>
 
 
 
-<div class="progress" style= "width:70%; margin: 0 auto;">
-  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-    60%
-  </div>
-</div>
+<body>
+<!-- <p>test</p> -->
+ <!-- <%= wicked_pdf_image_tag('bodyimage.png', {width: "680"})  %>
+ -->
 
 
-<h1>登録情報</h1>
+ <h1>登録情報</h1>
   <table>
       <tr>
         <th style= "background-color:#404040">登録ID</th>
@@ -38,7 +21,7 @@
       </tr>
       <tr>
       <th style= "background-color:#404040">登録メールアドレス</br>
-      (ログインID)</th>
+      </th>
         <td><%= current_user.email %></td>
       </tr>
   </table>
@@ -69,8 +52,8 @@
       </tr>
   </table>
 
-<div class= "btn_position2"><a href="/users/<%= current_user.id %>.pdf" class= "btn btn-primary">登録情報を印刷する</a>
-    </div>
-
-
-</div>
+<!-- <footer>
+ <%= yield %>
+</footer> -->
+</body>
+</html>

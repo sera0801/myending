@@ -8,7 +8,15 @@ p, a {
 header {
   /*height: 100px;*/
   background-color: white;
+ /* opacity: 0.3;
+  position: fixed;*/
+  width: 100%;
 }
+
+/*header ul li a {
+  font; white;
+}
+*/
 
 .mypage_header {
   background-color: #95badf;
@@ -49,7 +57,7 @@ header ul li {
 }
 
 
-footer {
+/*footer {
   height: 230px;
   width: 100%;
   background-color: #95badf;
@@ -80,5 +88,5 @@ footer div {
 }
 
 
-
+*/
 

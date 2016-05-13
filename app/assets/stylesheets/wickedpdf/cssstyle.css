@@ -1,0 +1,35 @@
+table {
+   font-size:14px;
+   border:1px #CCCCCC;
+   width: 60%;
+   margin: 5px auto;
+   }
+
+.table_title {
+  font-size: :20px;
+  color: black;
+}
+
+table th,
+table td {
+  border: 1px solid #CCCCCC;
+  padding:5px 8px;
+}
+
+table th {
+  background-color: #a9a9a9;
+  color: white;
+  width: 180px;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+
+p, a {
+  color: black;
+  font-family: "Arial","メイリオ","ヒラギノ角ゴ Pro","ＭＳ Ｐゴシック","sans-serif";
+}

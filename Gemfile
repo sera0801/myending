@@ -55,3 +55,6 @@ end
 
   gem 'paperclip'
   gem 'devise'
+
+  gem 'wkhtmltopdf-binary'
+  gem 'wicked_pdf'

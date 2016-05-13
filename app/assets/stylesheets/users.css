@@ -42,6 +42,14 @@ table th {
   margin: 0 auto;
 }
 
+.users_content{
+  width: 100%;
+}
+
+.userpage_photos ul {
+  padding: 0;
+}
+
 .userpage_photos li{
   list-style: none;
   float: left;
