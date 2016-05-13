@@ -5,25 +5,25 @@
 }*/
 
 
-table {
+.users_content table {
    font-size:14px;
    border:1px solid #CCCCCC;
    width: 85%;
    margin: 5px auto;
    }
 
-.table_title {
+.users_content .table_title {
   font-size: 20px;
   color: black;
 }
 
-table th,
-table td {
+.users_content table th,
+.users_content table td {
   border: 1px solid #CCCCCC;
   padding:5px 8px;
 }
 
-table th {
+.users_content table th {
   background-color: #a9a9a9;
   color: white;
   width: 150px;
@@ -48,17 +48,35 @@ table th {
 
 .userpage_photos ul {
   padding: 0;
+  text-align: center;
 }
 
 .userpage_photos li{
   list-style: none;
   float: left;
-  margin: 10px auto;
+  margin: 40px auto 0;
   width: 33%;
 }
 
-.userpage_photos li h2 {
-  font-size: 14px;
+.userpage_photos li label {
   text-align: center;
 }
 
+.userpage_photos li div {
+  width: 83px;
+  margin: 0 auto;
+}
+
+
+#progressbar_position{
+  width:80%;
+  margin: 0 auto;
+}
+
+
+/*#items li{
+  list-style: none;
+  float: left;
+  margin: 0 auto;
+  width: 33%;
+}*/

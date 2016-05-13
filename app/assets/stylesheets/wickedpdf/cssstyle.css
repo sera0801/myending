@@ -33,3 +33,18 @@ p, a {
   color: black;
   font-family: "Arial","メイリオ","ヒラギノ角ゴ Pro","ＭＳ Ｐゴシック","sans-serif";
 }
+
+#emphasis_box {
+   padding: 10px 20px 10px 20px;
+   border: 2px solid red;
+   font; red;
+   width: 10%;
+   text-align: center;
+   float: right;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
