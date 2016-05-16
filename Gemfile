@@ -57,4 +57,4 @@ end
   gem 'devise'
 
   gem 'wkhtmltopdf-binary'
-  gem 'wkhtmltopdf-binary-edge', '~> 0.12.2.1'
+  gem 'wicked_pdf'
