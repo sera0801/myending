@@ -36,7 +36,7 @@
                 <a href="/users/<%= current_user.id %>", class= "emphasis_box">My Page</a>
               </li>
               <li>
-                <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "emphasis_box", style: "font: white;" %>
+                <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "emphasis_box", style: "font: white;" %>
               </li>
 
             <% else %>
@@ -53,14 +53,15 @@
 
     <div class= "clearfix">
       <div class= "float_right header_div">
-          <ul>
-            <li><a href="/service_introduction">Endingnoteとは</a></li>
-            <li><span style="margin-right: 1em;"></span>|<span style="margin-right: 1em;"></span><a href="/service_guide">終活コラム</a></li>
+          <ul style= "margin-right: 15px">
+            <li><a href="/service_introduction">MyEnding.とは</a></li>
+            <li><span style="margin-right: 1em;"></span>|<span style="margin-right: 1em;"></span><a href="/column">終活コラム</a></li>
               <!-- <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="#">その他</a></li> -->
               <li><span style="margin-right: 1em;"></span>|<span style="margin-right: 1em;"></span><a href="http://www.recruit-mp.co.jp/company/data.html">Contact</a></li>
           </ul>
       </div>
     </div>
+
 
     </header>
 

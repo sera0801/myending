@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   end
 
   get 'service_introduction' => 'top#service_introduction'
-  get 'service_guide' => 'top#service_guide'
+  get 'column' => 'top#column'
   get 'logout' => 'top#logout'
 
   end

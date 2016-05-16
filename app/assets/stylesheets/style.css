@@ -11,17 +11,16 @@
 
 header {
   height: 70px;
-  background-color: black;
+  background-color: white ;
   opacity: 0.8;
   position: fixed;
   width: 100%;
-  position: fixed;
-  z-index: 1;
+ /* position: fixed;*/
 }
 
-.header_font{
-  color: white;
-}
+/*.header_font{
+  color: black;
+}*/
 
 .mypage_header {
   background-color: #337ab7;
@@ -56,7 +55,7 @@ header ul li {
 }
 
 header ul li a{
-  font: white;
+  color: black !important;
 }
 
 
@@ -64,12 +63,22 @@ header ul li a{
 
 .emphasis_box {
   padding: 5px 10px 5px 10px;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
 .header_div {
   margin: 0px 10px 10px 0px;
-  font: white;
+  color: black;
+}
+
+
+.devise_div {
+  width: 80%;
+  margin: 40px auto 0;
+}
+
+.inputbox_size{
+width: 30px;
 }
 
 

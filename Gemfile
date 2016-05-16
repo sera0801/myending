@@ -58,3 +58,6 @@ end
 
   gem 'wkhtmltopdf-binary'
   gem 'wicked_pdf'
+
+  gem 'jquery-turbolinks'
+

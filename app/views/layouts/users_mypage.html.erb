@@ -28,7 +28,7 @@
                 <a href="/users/<%= current_user.id %>" class="header_white"> <%= current_user.name %> さま</a><span style="margin-right: 1em;"></span>
               </li>
               <li>
-                <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "emphasis_box" %>
+                <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "emphasis_box" %>
               </li>
           </ul>
         </div>
@@ -38,7 +38,7 @@
 
      <div class= "clearfix">
         <div class= "float_right header_div">
-            <ul>
+            <ul style= "margin-right: 15px">
                 <li><a href="/users/<%= current_user.id %>/pictures" style= "font: white;">写真</a></li>
 
                 <li><span style="margin-right: 1em;"></span>|<span style="margin-right: 1em;"></span>
