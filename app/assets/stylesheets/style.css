@@ -1,27 +1,35 @@
 
-p, a {
-  color: black;
+.contents p,
+.contents a{
+ /* color: black;*/
   font-family: "Arial","メイリオ","ヒラギノ角ゴ Pro","ＭＳ Ｐゴシック","sans-serif";
 }
 
+.contents {
+  padding-top: 70px;
+}
 
 header {
-  /*height: 100px;*/
-  background-color: white;
- /* opacity: 0.3;
-  position: fixed;*/
+  height: 70px;
+  background-color: black;
+  opacity: 0.8;
+  position: fixed;
   width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
-/*header ul li a {
-  font; white;
+.header_font{
+  color: white;
 }
-*/
 
 .mypage_header {
-  background-color: #95badf;
-  height: 150px;
+  background-color: #337ab7;
+  /*height: 150px;*/
+}
 
+.mypage_header ul li a{
+  color: white !important;
 }
 
 .float_left {
@@ -47,13 +55,21 @@ header ul li {
   padding-right: 10px;
 }
 
+header ul li a{
+  font: white;
+}
+
+
+
+
 .emphasis_box {
-  padding: 10px 20px 10px 20px;
-  border: 2px solid black;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid white;
 }
 
 .header_div {
-  margin: 30px 10px 20px 0px;
+  margin: 0px 10px 10px 0px;
+  font: white;
 }
 
 

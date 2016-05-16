@@ -10,6 +10,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
 
+
+
   <!-- <script type="text/javascript" src="jquery-1.10.2.js"></script> -->
 <!--   <script type="text/javascript" src="jquery.touchSwipe.js"></script>
   <script type="text/javascript" src="jquery.horizonScroll.js"></script>
@@ -24,7 +26,7 @@
     <div class= "clearfix">
 <a href="/" style= "float:left;">Endingnote</a>
 
-      <div class= "float_right header_div">
+      <div class= "float_right header_div" style= "margin-top: 15px;">
           <ul>
            <% if user_signed_in? %>
               <!-- <li>
@@ -34,7 +36,7 @@
                 <a href="/users/<%= current_user.id %>", class= "emphasis_box">My Page</a>
               </li>
               <li>
-                <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "emphasis_box" %>
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "emphasis_box", style: "font: white;" %>
               </li>
 
             <% else %>
@@ -52,18 +54,19 @@
     <div class= "clearfix">
       <div class= "float_right header_div">
           <ul>
-              <li><a href="/service_introduction">Endingnoteとは</a></li>
-              <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="/service_guide">終活コラム</a></li>
+            <li><a href="/service_introduction">Endingnoteとは</a></li>
+            <li><span style="margin-right: 1em;"></span>|<span style="margin-right: 1em;"></span><a href="/service_guide">終活コラム</a></li>
               <!-- <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="#">その他</a></li> -->
-              <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="http://www.recruit-mp.co.jp/company/data.html">Contact</a></li>
+              <li><span style="margin-right: 1em;"></span>|<span style="margin-right: 1em;"></span><a href="http://www.recruit-mp.co.jp/company/data.html">Contact</a></li>
           </ul>
       </div>
     </div>
 
     </header>
 
-
+<div class= "contennts">
   <%= yield %>
+</div>
 
 
 <!-- <footer>

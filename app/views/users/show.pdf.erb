@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <%= wicked_pdf_stylesheet_link_tag "wickedpdf/cssstyle" %>
+  <%= wicked_pdf_stylesheet_link_tag asset_path("wickedpdf/cssstyle") %>
 </head>
 
 
@@ -13,47 +13,92 @@
  -->
 
  <header>
- <div class= "clearfix">
-    <h2 id= "emphasis_box">重要</h2>
+ <div style= "content: "";
+  clear: both;
+  display: block;">
+
+    <h2 style="padding: 10px 20px 10px 20px;
+   border: 2px solid red;
+   font: red;
+   width: 10%;
+   text-align: center;
+   /*float: right;*/
+   margin-left: auto;">重要</h2>
   </div>
  </header>
 
- <h1>登録情報</h1>
-  <table>
-      <tr>
-        <th style= "background-color:#404040">登録ID</th>
-        <td>000E<%= current_user.id %></td>
+ <h1 style= "font-size: 24px;
+  text-align: center;
+  margin: 40px auto;">登録情報</h1>
+
+
+  <table style= "
+   font-size:14px;
+   border:1px #CCCCCC;
+   width: 70%;
+   margin: 5px auto;
+   ">
+      <tr style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">
+        <th style= "background-color:#404040; border: 1px solid #CCCCCC;
+  padding:5px 8px;">登録ID</th>
+        <td style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">000E<%= current_user.id %></td>
       </tr>
-      <tr>
-      <th style= "background-color:#404040">登録メールアドレス</br>
+      <tr style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">
+      <th style= "background-color:#404040; border: 1px solid #CCCCCC;
+  padding:5px 8px;">登録Email</br>
       </th>
-        <td><%= current_user.email %></td>
+        <td style="border: 1px solid #CCCCCC;
+  padding:5px 8px;"><%= current_user.email %></td>
       </tr>
   </table>
 
-  <table>
-      <tr>
-        <th>名前</th>
-        <td><%= current_user.name %></td>
+  <table style= "font-size:14px;
+   border:1px #CCCCCC;
+   width: 70%;
+   margin: 5px auto;">
+      <tr style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">
+        <th style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">名前</th>
+        <td style="border: 1px solid #CCCCCC;
+  padding:5px 8px;"><%= current_user.name %></td>
       </tr>
-      <tr>
-        <th>カナ</th>
-        <td><%= current_user.kana %> </td>
+      <tr style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">
+        <th style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">カナ</th>
+        <td style="border: 1px solid #CCCCCC;
+  padding:5px 8px;"><%= current_user.kana %> </td>
       </tr>
-      <tr>
-        <th>生年月日</th>
-        <td><%= current_user.b_year %>年<%= current_user.b_month %>月<%= current_user.b_day %>日  </td>
+      <tr style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">
+        <th style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">生年月日</th>
+        <td style="border: 1px solid #CCCCCC;
+  padding:5px 8px;"><%= current_user.b_year %>年<%= current_user.b_month %>月<%= current_user.b_day %>日  </td>
       </tr>
-      <tr>
-        <th>性別</th>
-        <td><%= current_user.get_sex %> </td>
+      <tr style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">
+        <th style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">性別</th>
+        <td style="border: 1px solid #CCCCCC;
+  padding:5px 8px;"><%= current_user.get_sex %> </td>
       </tr>
-      <tr>
-        <th>郵便番号</th>
-        <td>〒<%= current_user.postalcode1 %>-<%= current_user.postalcode2 %>  </td>
-      <tr>
-        <th>住所</th>
-        <td><%= current_user.address %> </td>
+      <tr style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">
+        <th style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">郵便番号</th>
+        <td style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">〒<%= current_user.postalcode1 %>-<%= current_user.postalcode2 %>  </td>
+      <tr style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">
+        <th style="border: 1px solid #CCCCCC;
+  padding:5px 8px;">住所</th>
+        <td style="border: 1px solid #CCCCCC;
+  padding:5px 8px;"><%= current_user.address %> </td>
       </tr>
   </table>
 

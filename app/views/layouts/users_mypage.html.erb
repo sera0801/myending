@@ -14,9 +14,6 @@
   <title>Progress Bar</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-
-
-
 </head>
 
 
@@ -25,10 +22,10 @@
   <header class= "mypage_header">
 
     <div class= "clearfix">
-      <div class= "float_right header_div">
+      <div class= "float_right header_div" style="margin-top: 15px;">
           <ul>
               <li>
-                <a href="/users/<%= current_user.id %>"> <%= current_user.name %> さま</a><span style="margin-right: 1em;"></span>
+                <a href="/users/<%= current_user.id %>" class="header_white"> <%= current_user.name %> さま</a><span style="margin-right: 1em;"></span>
               </li>
               <li>
                 <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "emphasis_box" %>
@@ -42,16 +39,16 @@
      <div class= "clearfix">
         <div class= "float_right header_div">
             <ul>
-                <li><a href="/users/<%= current_user.id %>/pictures">写真</a></li>
+                <li><a href="/users/<%= current_user.id %>/pictures" style= "font: white;">写真</a></li>
 
-                <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span>
+                <li><span style="margin-right: 1em;"></span>|<span style="margin-right: 1em;"></span>
                 <% if current_user.form.present? %>
                   <a href="/users/<%= current_user.id %>/form">Ending Form</a>
                 <% else %>
                   <a href="/users/<%= current_user.id %>/form/new">Ending Form</a>
                 <% end %>
                 </li>
-                <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="/users/<%= current_user.id %>/messageposts">メッセージ</a></li>
+                <li><span style="margin-right: 1em;"></span>|<span style="margin-right: 1em;"></span><a href="/users/<%= current_user.id %>/messageposts">メッセージ</a></li>
             </ul>
         </div>
 
