@@ -1,9 +1,48 @@
  <div class="service_guide contents">
+
     <div>
 
         <div class= "service_img_div">
-          <p>あなたらしく最期を迎える</br>
-          ３つの方法</p>
+          <p style= "font-size: 20px;">MyEnding.とは</p>
+        </div>
+
+
+        <h3 class= "column_h3">あなたの大切な記録を</br>
+        しっかり保存します</h3>
+
+        <img src= "/assets/cloud.jpg" class= "img_size4 img-circle img_margin">
+
+        <p>
+        あなたの記憶をより鮮明に、より美しく。</br>
+        紛失・劣化などの心配もありません。
+        </p>
+
+        <hr class= "hr">
+
+
+
+        <h3 class= "column_h3">簡単操作でしっかり作成</h3>
+
+          <img src= "/assets/photo4.jpg" class= "img_size4 img-circle img_margin">
+
+        <p>
+          わかりやすくシンプルなサービス内容ですので</br>
+          パソコンを使える方ならどなたでもご利用いただけます
+        </p>
+
+        <hr class= "hr">
+
+        <h3 class= "column_h3">どうぞお気軽にお試しください</h3>
+        <p>
+        ご利用料金は<span style="margin-right: 1em;"></span><span style= "color:red; font-size:60px;">0円</span><span style="margin-right: 1em;"></span>です
+        </p>
+
+        <div class= "btn_position2">
+        <% if user_signed_in? %>
+          <%= link_to "マイページへ", "users/#{current_user.id}", method: :get, class: "btn btn-warning btn-lg" %>
+        <% else %>
+        <%= link_to "ユーザー登録する", new_user_registration_path, class: "emphasis_box", class: "btn btn-warning btn-lg" %>
+        <% end %>
         </div>
 
 

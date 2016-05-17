@@ -189,7 +189,7 @@ text-decoration:underline;
 }
 
 .img_size4 {
-  width: 90%;
+  width: 300px;
 }
 
 .frame {
@@ -238,6 +238,12 @@ blur, .blur > img {
 
 .img_margin {
   margin: 30px;
+}
+
+
+.column_h3 {
+  width: 95%;
+  margin: 40px auto;
 }
 
 
