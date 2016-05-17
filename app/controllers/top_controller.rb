@@ -30,6 +30,9 @@ class TopController < ApplicationController
     @obj = JSON.parse(res)
   end
 
+  def bereaved_family
+  end
+
   def logout
   end
 

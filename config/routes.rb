@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get 'service_introduction' => 'top#service_introduction'
   get 'column' => 'top#column'
+  get 'bereaved_family' => 'top#bereaved_family'
   get 'logout' => 'top#logout'
 
   end
