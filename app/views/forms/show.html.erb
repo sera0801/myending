@@ -11,7 +11,7 @@
           <%= f.radio_button :q1, 5, {:disabled => true} %> <%= f.label :q1, "葬儀はしなくて良い（火葬のみ）", {:disabled => true} %><br>
           <%= f.radio_button :q1, 6, {:disabled => true} %> <%= f.label :q1, "特に希望はないので、家族の判断で行ってほしい" %><br>
           <%= f.label :q1_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q1_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q1_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -20,7 +20,7 @@
           <%= f.radio_button :q2, 2, {:disabled => true} %> <%= f.label :q2, "生前予約している" %><br>
           <%= f.radio_button :q2, 3, {:disabled => true} %> <%= f.label :q2, "予約など希望内容がある" %><br>
           <%= f.label :q2_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q2_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q2_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -29,7 +29,7 @@
           <%= f.radio_button :q3, 2, {:disabled => true} %> <%= f.label :q3, "生前予約している" %><br>
           <%= f.radio_button :q3, 3, {:disabled => true} %> <%= f.label :q3, "予約など希望内容がある" %><br>
           <%= f.label :q3_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q3_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q3_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
 
@@ -41,7 +41,7 @@
           <%= f.radio_button :q4, 4, {:disabled => true} %> <%= f.label :q4, "戒名・法名はいらない" %><br>
           <%= f.radio_button :q4, 5, {:disabled => true} %> <%= f.label :q4, "家族の判断に任せたい" %><br>
           <%= f.label :q4_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q4_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q4_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -52,27 +52,27 @@
           <%= f.radio_button :q5, 4, {:disabled => true} %> <%= f.label :q5, "家族の判断に任せたい" %><br>
           <%= f.radio_button :q5, 5, {:disabled => true} %> <%= f.label :q5, "その他" %><br>
           <%= f.label :q5_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q5_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q5_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
           <%= f.label :q6, "(6)喪主になってほしい人" %><br>
           <%= f.label :moshu_name, "名前" %>
-          <%= f.text_field :moshu_name, placeholder: "名前" %></br>
+          <%= f.text_field :moshu_name, placeholder: "名前",disabled: 'disabled' %></br>
           <%= f.label :moshu_kana, "カナ" %>
-          <%= f.text_field :moshu_kana, placeholder: "カナ" %></br>
+          <%= f.text_field :moshu_kana, placeholder: "カナ",disabled: 'disabled' %></br>
           <%= f.label :moshu_number, "電話番号" %>
-          <%= f.text_field :moshu_number, placeholder: "電話番号" %></br>
+          <%= f.text_field :moshu_number, placeholder: "電話番号",disabled: 'disabled' %></br>
         </div>
 
         <div >
           <%= f.label :q6, "(7)挨拶を取り仕切ってほしい人" %><br>
           <%= f.label :_name, "名前" %>
-          <%= f.text_field :aisatsu_name, placeholder: "名前" %></br>
+          <%= f.text_field :aisatsu_name, placeholder: "名前",disabled: 'disabled' %></br>
           <%= f.label :aisatsu_kana, "カナ" %>
-          <%= f.text_field :aisatsu_kana, placeholder: "カナ" %></br>
+          <%= f.text_field :aisatsu_kana, placeholder: "カナ",disabled: 'disabled' %></br>
           <%= f.label :aisatsu_number, "電話番号" %>
-          <%= f.text_field :aisatsu_number, placeholder: "電話番号" %></br>
+          <%= f.text_field :aisatsu_number, placeholder: "電話番号",disabled: 'disabled' %></br>
         </div>
 
         <div >
@@ -81,7 +81,7 @@
           <%= f.radio_button :q8, 2, {:disabled => true} %> <%= f.label :q8, "辞退する" %><br>
           <%= f.radio_button :q8, 3, {:disabled => true} %> <%= f.label :q8, "家族の判断に任せる" %><br>
           <%= f.label :q8_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q8_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q8_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -89,7 +89,7 @@
           <%= f.radio_button :q9, 1, {:disabled => true} %> <%= f.label :q9, "いない" %><br>
           <%= f.radio_button :q9, 2, {:disabled => true} %> <%= f.label :q9, "いる" %><br>
           <%= f.label :q9_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q9_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q9_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -97,7 +97,7 @@
           <%= f.radio_button :q10, 1, {:disabled => true} %> <%= f.label :q10, "特に希望なし" %><br>
           <%= f.radio_button :q10, 2, {:disabled => true} %> <%= f.label :q10, "希望あり" %><br>
           <%= f.label :q10_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q10_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q10_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -105,7 +105,7 @@
           <%= f.radio_button :q11, 1, {:disabled => true} %> <%= f.label :q11, "特に希望なし" %><br>
           <%= f.radio_button :q11, 2, {:disabled => true} %> <%= f.label :q11, "希望あり" %><br>
           <%= f.label :q11_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q11_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q11_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -113,7 +113,7 @@
           <%= f.radio_button :q21, 1, {:disabled => true} %> <%= f.label :q21, "特に希望なし" %><br>
           <%= f.radio_button :q21, 2, {:disabled => true} %> <%= f.label :q21, "希望あり" %><br>
           <%= f.label :q21_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q21_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q21_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -121,7 +121,7 @@
           <%= f.radio_button :q22, 1, {:disabled => true} %> <%= f.label :q22, "特に希望なし" %><br>
           <%= f.radio_button :q22, 2, {:disabled => true} %> <%= f.label :q22, "希望あり" %><br>
           <%= f.label :q22_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q22_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q22_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -129,7 +129,7 @@
           <%= f.radio_button :q12, 1, {:disabled => true} %> <%= f.label :q12, "特に希望なし" %><br>
           <%= f.radio_button :q12, 2, {:disabled => true} %> <%= f.label :q12, "希望あり" %><br>
           <%= f.label :q12_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q12_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q12_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
          <div >
@@ -137,12 +137,12 @@
           <%= f.radio_button :q13, 1, {:disabled => true} %> <%= f.label :q13, "特に用意していないので、家族の判断に任せたい" %><br>
           <%= f.radio_button :q13, 2, {:disabled => true} %> <%= f.label :q13, "自身の死亡通知を用意してある" %><br>
           <%= f.label :q13_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q13_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q13_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
           <%= f.label :q14_d, "(16)死亡通知書を送ってほしい人" %><br>
-          <%= f.text_area :q14_d, placeholder: "名前/住所/連絡先", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q14_d, placeholder: "名前/住所/連絡先", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -150,7 +150,7 @@
           <%= f.radio_button :q15, 1, {:disabled => true} %> <%= f.label :q15, "特に用意していない" %><br>
           <%= f.radio_button :q15, 2, {:disabled => true} %> <%= f.label :q15, "用意してあるので、それをつかってほしい" %><br>
           <%= f.label :q15_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q15_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q15_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -158,7 +158,7 @@
           <%= f.radio_button :q16, 1, {:disabled => true} %> <%= f.label :q16, "特に用意していない" %><br>
           <%= f.radio_button :q16, 2, {:disabled => true} %> <%= f.label :q16, "希望あり" %><br>
           <%= f.label :q16_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q16_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q16_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -174,7 +174,7 @@
           <%= f.radio_button :q17, 9, {:disabled => true} %> <%= f.label :q17, "お骨の一部を加工して、家族の身近なところに置いてほしい" %><br>
           <%= f.radio_button :q17, 10, {:disabled => true} %> <%= f.label :q17, "その他" %><br>
           <%= f.label :q17_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q17_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q17_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -185,7 +185,7 @@
           <%= f.radio_button :q18, 4, {:disabled => true} %> <%= f.label :q18, "家族の判断に任せたい" %><br>
           <%= f.radio_button :q18, 5, {:disabled => true} %> <%= f.label :q18, "その他" %><br>
           <%= f.label :q18_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q18_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q18_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -196,7 +196,7 @@
           <%= f.radio_button :q19, 4, {:disabled => true} %> <%= f.label :q19, "永代供養だが、小規模でいいので供養・年回法要（法事）を行ってほしい" %><br>
           <%= f.radio_button :q19, 5, {:disabled => true} %> <%= f.label :q19, "その他" %><br>
           <%= f.label :q19_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q19_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q19_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
@@ -206,12 +206,12 @@
           <%= f.radio_button :q20, 3, {:disabled => true} %> <%= f.label :q20, "全て家族の判断に任せたい" %><br>
           <%= f.radio_button :q20, 4, {:disabled => true} %> <%= f.label :q20, "その他" %><br>
           <%= f.label :q20_d, "選択肢の詳細" %></br>
-          <%= f.text_area :q20_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :q20_d, placeholder: "選択肢の詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
         <div >
           <%= f.label :requests, "(23)その他上記以外の希望" %><br>
-          <%= f.text_area :requests, placeholder: "詳細", class: "detail_box detail_box_size" %>
+          <%= f.text_area :requests, placeholder: "詳細", class: "detail_box detail_box_size",disabled: 'disabled' %>
         </div>
 
     <% end %>

@@ -21,9 +21,11 @@
 <body>
   <header class= "mypage_header">
 
+  <a href="/"><%= image_tag "logo_black2.png", class: "logo_size"%></a>
+
     <div class= "clearfix">
       <div class= "main">
-        <div style="margin-top: 15px; float:right;">
+        <div style="margin: 20px 10px 0 0; float:right;">
             <ul>
                 <li>
                   <a href="/users/<%= current_user.id %>"> <%= current_user.name %> さま</a><span style="margin-right: 1em;"></span>
