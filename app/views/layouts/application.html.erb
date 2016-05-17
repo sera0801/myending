@@ -21,53 +21,58 @@
 
 <body>
 
+<div class= "top">
+
     <header>
 
-    <div class= "clearfix">
-<a href="/" style= "float:left;">Endingnote</a>
+    <div>
 
-      <div class= "float_right header_div" style= "margin-top: 15px;">
-          <ul>
+    <a href="/"><%= image_tag "logo_black.png", class: "logo_size"%></a>
+
+
+
+
+      <div class= "float_right div_size">
+
+        <div class= "clearfix">
+          <ul class= "float_right" style= "margin: 15px 10px 0 0;">
            <% if user_signed_in? %>
               <!-- <li>
                 <%= current_user.name %>
               </li> -->
               <li>
-                <a href="/users/<%= current_user.id %>", class= "emphasis_box">My Page</a>
+                <a href="/users/<%= current_user.id %>", class= "emphasis_box">My Page</a><span style="margin-right: 1em;"></span>
               </li>
               <li>
-                <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "emphasis_box", style: "font: white;" %>
+                <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "emphasis_box"%>
               </li>
 
             <% else %>
               <li>
-              <%= link_to "ログイン", new_user_session_path, class: "emphasis_box"  %>
-              </li>
+              <%= link_to "ログイン", new_user_session_path, class: "emphasis_box"  %><span style="margin-right: 1em;"></span>
               <li>
+              </li>
               <%= link_to "新規登録", new_user_registration_path, class: "emphasis_box" %>
               </li>
             <% end %>
           </ul>
         </div>
-      </div>
 
-    <div class= "clearfix">
-      <div class= "float_right header_div">
-          <ul style= "margin-right: 15px">
-            <li><a href="/service_introduction">MyEnding.とは</a></li>
-            <li><span style="margin-right: 1em;"></span>|<span style="margin-right: 1em;"></span><a href="/column">終活コラム</a></li>
-              <!-- <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="#">その他</a></li> -->
-              <li><span style="margin-right: 1em;"></span>|<span style="margin-right: 1em;"></span><a href="http://www.recruit-mp.co.jp/company/data.html">Contact</a></li>
-          </ul>
-      </div>
-    </div>
 
+
+            <ul class= "float_right" style= "margin: 10px 10px 0 0;">
+              <li><a href="/service_introduction">サービス概要</a></li>
+              <li><span style="margin-right: 0.5em;"></span>|<span style="margin-right: 0.5em;"></span><a href="/column">コラム</a></li>
+                <!-- <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="#">その他</a></li> -->
+                <li><span style="margin-right: 0.5em;"></span>|<span style="margin-right: 0.5em;"></span><a href="http://www.recruit-mp.co.jp/company/data.html">遺族の方へ</a></li>
+            </ul>
+      </div>
 
     </header>
 
-<div class= "contennts">
+    </div>
+
   <%= yield %>
-</div>
 
 
 <!-- <footer>

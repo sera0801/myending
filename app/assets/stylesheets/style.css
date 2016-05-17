@@ -9,8 +9,8 @@
   padding-top: 70px;
 }
 
-header {
-  height: 70px;
+.top header {
+  /*height: 70px;*/
   background-color: white ;
   opacity: 0.8;
   position: fixed;
@@ -18,26 +18,12 @@ header {
  /* position: fixed;*/
 }
 
-/*.header_font{
-  color: black;
-}*/
-
-.mypage_header {
-  background-color: #337ab7;
-  /*height: 150px;*/
-}
-
-.mypage_header ul li a{
-  color: white !important;
-}
 
 .float_left {
-  margin: 0;
   float: left;
 }
 
 .float_right {
-  margin: 0;
   float: right;
 }
 
@@ -51,11 +37,13 @@ header ul li {
   margin: 0;
   float: left;
   list-style: none;
-  padding-right: 10px;
+
+ /* padding-right: 10px;*/
 }
 
 header ul li a{
   color: black !important;
+  font-size: 12px;
 }
 
 
@@ -66,11 +54,10 @@ header ul li a{
   border: 1px solid black;
 }
 
-.header_div {
-  margin: 0px 10px 10px 0px;
-  color: black;
+.emphasis_box2 {
+  padding: 5px 10px 5px 10px;
+  border: 1px solid white;
 }
-
 
 .devise_div {
   width: 80%;
@@ -80,6 +67,52 @@ header ul li a{
 .inputbox_size{
 width: 30px;
 }
+
+
+.mypage_header a {
+  color: white;
+}
+
+.mypage_header {
+  background-color: #337ab7;
+ /* height: 45px;*/
+
+}
+
+.mypage_header ul li a{
+  color: white !important;
+}
+
+.main {
+  width:  100%;
+  height: 40px;
+}
+
+.logo_size {
+  width: 25%;
+  float: left;
+  margin: 20px 0 0 20px;
+}
+
+.div_size {
+  width: 70%;
+}
+
+
+/*以下タブメニュー*/
+
+/*
+*/
+
+
+
+
+
+
+
+
+
+
 
 
 /*footer {
@@ -114,4 +147,50 @@ footer div {
 
 
 */
+
+
+.users_content {
+  background-color: white;
+}
+
+
+nav ul {
+  margin: 40px 0 0 0;
+}
+
+.tabs{
+  /*border-radius: 6px 6px 0 0;*/
+  display: inline-block;
+  line-height: 40px;
+  font: sans-serif;
+  text-align: center;
+  background-color: #EEEEEE;
+  color: black;
+  margin-left: 4px;
+  text-decoration: none;
+  width: 20%;
+  padding: 0;
+  /*border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;*/
+  /*padding: 2px;*/
+}
+
+
+.tab1 { border-top: 6px solid tomato; }
+.tab2 { border-top: 6px solid gold; }
+.tab3 { border-top: 6px solid orange; }
+.tab4 { border-top: 6px solid green; }
+
+
+.selected {
+  background-color: white ;
+  color: black;
+}
+
+.tabs:hover {
+  background-color: white;
+}
+
+
 

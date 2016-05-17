@@ -22,55 +22,60 @@
   <header class= "mypage_header">
 
     <div class= "clearfix">
-      <div class= "float_right header_div" style="margin-top: 15px;">
-          <ul>
-              <li>
-                <a href="/users/<%= current_user.id %>" class="header_white"> <%= current_user.name %> さま</a><span style="margin-right: 1em;"></span>
-              </li>
-              <li>
-                <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "emphasis_box" %>
-              </li>
-          </ul>
+      <div class= "main">
+        <div style="margin-top: 15px; float:right;">
+            <ul>
+                <li>
+                  <a href="/users/<%= current_user.id %>"> <%= current_user.name %> さま</a><span style="margin-right: 1em;"></span>
+                </li>
+                <li>
+                  <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "emphasis_box2" %>
+                </li>
+            </ul>
         </div>
       </div>
 
 
+<nav>
+  <ul>
+     <!--  <a href="/users/<%= current_user.id %>" class= "selected"><li>Home</li></a> -->
 
-     <div class= "clearfix">
-        <div class= "float_right header_div">
-            <ul style= "margin-right: 15px">
-                <li><a href="/users/<%= current_user.id %>/pictures" style= "font: white;">写真</a></li>
+      <%= link_to "/users/#{current_user.id}", method: :get do %>
+        <li class= "test tabs tab1">Home</li>
+      <% end %>
 
-                <li><span style="margin-right: 1em;"></span>|<span style="margin-right: 1em;"></span>
-                <% if current_user.form.present? %>
-                  <a href="/users/<%= current_user.id %>/form">Ending Form</a>
-                <% else %>
-                  <a href="/users/<%= current_user.id %>/form/new">Ending Form</a>
-                <% end %>
-                </li>
-                <li><span style="margin-right: 1em;"></span>|<span style="margin-right: 1em;"></span><a href="/users/<%= current_user.id %>/messageposts">メッセージ</a></li>
-            </ul>
-        </div>
+      <%= link_to "/users/#{current_user.id}/pictures", method: :get do%>
+        <li class= "tabs tab2">写真</li>
+      <% end %>
 
-  </header>
+
+      <% if current_user.form.present? %>
+      <%= link_to "/users/#{current_user.id}/form", method: :get do%>
+      <li class= "tabs tab3">Form</li><% end %>
+      <% else %>
+      <%= link_to "/users/#{current_user.id}/form/new", method: :get do%>
+      <li class= "tabs tab3">Form</li><% end %>
+      <% end %>
+
+      <%= link_to "/users/#{current_user.id}/messageposts", method: :get do%>
+      <li class= "tabs tab4">メッセージ</li><% end %>
+  </ul>
+</nav>
+
+</div>
+
+</header>
+
+
+
+
+
+
+
 
   <%= yield %>
 
 
-   <!--  <footer>
-      <ul>
-        <li class='li_float_left'><a href="/">トップページ</a></li>
-        <li class='li_float_left'><a href="/service_introduction">Endingnoteとは</a></li>
-        <li class='li_float_left'><a href="/service_guide">サービスのご案内</a></li>
-        <li class='li_float_left'>その他１</li>
-        <li class='li_float_left'>その他２</li>
-        <li class='li_float_left'>その他３</li>
-      </ul></br>
-      <p class='footer_letter'>
-        Copyright (c) 2016 Endingnote All Rights Reserved
-      </p>
-    </footer>
- -->
 </body>
 
 </html>
