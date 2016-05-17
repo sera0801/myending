@@ -236,4 +236,8 @@ blur, .blur > img {
     content: " ";
 }
 
+.img_margin {
+  margin: 30px;
+}
+
 
