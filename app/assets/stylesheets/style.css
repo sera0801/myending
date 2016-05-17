@@ -42,7 +42,7 @@ header ul li {
 }
 
 header ul li a{
-  color: black !important;
+  color: black;
   font-size: 12px;
 }
 
@@ -154,6 +154,10 @@ nav ul {
   margin-bottom: 50px;
 }
 
+
+.color_red {
+   color: red;"
+}
 
 
 
