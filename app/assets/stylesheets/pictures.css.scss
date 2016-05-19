@@ -29,7 +29,7 @@
 
 .pictures_index_img_div {
   border: 1px solid gray;
-  border-radius: 1em; 
+  border-radius: 1em;
   width: 380px;
   height: 380px;
   background-position: center center;
@@ -37,5 +37,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   padding: 10px;
-  margin: 30px 0;
+  margin: 30px auto 0;
+}
+
+
+.delete_button {
+  margin: 320px 10px 10px 320px;
 }

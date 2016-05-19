@@ -6,8 +6,12 @@
  <% current_user.pictures.each do |picture| %>
 
 <div class= "pictures_index_img_div" style="background-image:url(<%= picture.portrait %>);" >
+    <div>
     <p><%= picture.title %></p>
+    </div>
+    <div class= "delete_button">
     <%= link_to '削除', user_picture_path(current_user, picture), method: :delete%>
+    </div>
 </div>
 
 
