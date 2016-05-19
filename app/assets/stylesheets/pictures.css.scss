@@ -4,6 +4,7 @@
 
 .picture_margin {
   margin-top: 60px;
+  padding:10px;
 }
 
 .picture_index h1 {
@@ -23,4 +24,18 @@
 
 .picture_new div {
   margin: 30px 20px;
+}
+
+
+.pictures_index_img_div {
+  border: 1px solid gray;
+  border-radius: 1em; 
+  width: 380px;
+  height: 380px;
+  background-position: center center;
+  background-position: 90%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 10px;
+  margin: 30px 0;
 }

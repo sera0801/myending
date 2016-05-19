@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-
+<div id= "wrap">
 <head>
   <title>Endingnote</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -9,6 +9,7 @@
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
+<script type="text/javascript" src="./footerFixed.js"></script>
 
 
 
@@ -20,6 +21,7 @@
 
 
 <body>
+
 
 <div class= "top">
 
@@ -70,17 +72,16 @@
 
     </header>
 
-    </div>
-
+<div id= "content">
   <%= yield %>
+</div>
 
-
-<footer>
+ <footer id= "footer">
 
       <div class= "clearfix">
           <ul>
               <li><a href="/service_introduction">サービス概要</a></li>
-              <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="/service_guide">コラム</a></li>
+              <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="/column">コラム</a></li>
               <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="http://www.recruit-mp.co.jp/company/data.html">会社概要</a></li>
           </ul>
       </div>
@@ -94,7 +95,10 @@
      </div>
 
 
-</footer>
+   </footer>
+ </div>
+
+
 
 
 </body>

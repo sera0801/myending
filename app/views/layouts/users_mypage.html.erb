@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+
+<div id= "wrap">
 <head>
   <title>Endingnote</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -74,11 +76,12 @@
 
 
 
-
+<div id= "content">
   <%= yield %>
+</div>
 
 
-  <footer>
+  <footer id= "footer">
 
       <div class= "clearfix">
           <ul>
@@ -98,6 +101,7 @@
 
 
 </footer>
+</div>
 
 
 </body>

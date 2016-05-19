@@ -1,3 +1,12 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin-bottom: 150px;
+}
+
 
 .contents p,
 .contents a{
@@ -186,6 +195,7 @@ footer {
   text-align: center;
   color: white;
   padding: 5px;
+  margin-top: 30px;
 }
 
 /*footer a, footer p {
@@ -208,6 +218,25 @@ footer div {
   margin: 20px auto 20px auto;
 }
 
+
+
+html,body{
+     height: 100%;
+}
+#wrap{
+     width: 100%;
+     position: relative;
+     min-height: 100%;
+}
+
+#content{
+     padding-bottom: 150px;  /* フッターの高さと同じ */
+}
+#footer{
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+}
 
 
 

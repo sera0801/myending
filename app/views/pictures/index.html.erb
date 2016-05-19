@@ -5,16 +5,20 @@
 
  <% current_user.pictures.each do |picture| %>
 
-  <div class="row" >
-    <div class="col-xs-12 col-md-3 picture_margin">
-    <!-- <p><<%= picture.title %>></p> -->
-      <a href="#" class="thumbnail">
-        <img src="<%= picture.portrait %>" alt="写真">
-      </a>
+<div class= "pictures_index_img_div" style="background-image:url(<%= picture.portrait %>);" >
+    <p><%= picture.title %></p>
+    <%= link_to '削除', user_picture_path(current_user, picture), method: :delete%>
+</div>
 
-      <%= link_to '削除', user_picture_path(current_user, picture), method: :delete, style: "float: right;"%>
-    </div>
-  <div>
+
+
+  <!-- <div>
+    <ul>
+      <li><p><%= picture.title %></p></li>
+      <li><img src="<%= picture.portrait %>" alt="写真" style= "width: 300px;"></li>
+      <li><%= link_to '削除', user_picture_path(current_user, picture), method: :delete%></li>
+    </ul>>
+  <div> -->
 <% end %>
 
 
