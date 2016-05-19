@@ -23,7 +23,7 @@
 <body>
   <header class= "mypage_header">
 
-  <a href="/"><%= image_tag "logo_black2.png", class: "logo_size"%></a>
+  <a href="/"><%= image_tag "logo.png", class: "logo_size"%></a>
 
     <div class= "clearfix">
       <div class= "main">
@@ -45,7 +45,7 @@
      <!--  <a href="/users/<%= current_user.id %>" class= "selected"><li>Home</li></a> -->
 
       <%= link_to "/users/#{current_user.id}", method: :get do %>
-        <li class= "test tabs tab1">Home</li>
+        <li class= "tabs tab1">Home</li>
       <% end %>
 
       <%= link_to "/users/#{current_user.id}/pictures", method: :get do%>
@@ -62,7 +62,7 @@
       <% end %>
 
       <%= link_to "/users/#{current_user.id}/messageposts", method: :get do%>
-      <li class= "tabs tab4">メッセージ</li><% end %>
+      <li class= "tabs tab4" style= "font-size: 14px;">メッセージ</li><% end %>
   </ul>
 </nav>
 
@@ -83,12 +83,12 @@
 
   <footer id= "footer">
 
-      <div class= "clearfix">
+      <div class= "clearfix" style= "width: 350px;">
           <ul>
               <li><a href="/service_introduction">サービス概要</a></li>
               <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="/service_guide">コラム</a></li>
               <li><span style="margin-right: 1em;"></span>/<span style="margin-right: 1em;"></span><a href="http://www.recruit-mp.co.jp/company/data.html">会社概要</a></li>
-          </ul>
+            </ul>
       </div>
 
       <div>

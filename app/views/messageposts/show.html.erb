@@ -1,0 +1,32 @@
+<div class="users_content">
+<div class= "messageposts contents">
+
+
+
+        <div class="letter">
+            <h3><%= @messagepost.dear %> へ</h3>
+            <hr color= "gray">
+            <%= simple_format(@messagepost.text) %>
+        </div>
+
+        <div class="clearfix btn_position">
+            <ul>
+              <li>
+                <%= link_to '編集', edit_user_messagepost_path(current_user, @messagepost), method: :get, class: "btn btn-default" %>
+              </li>
+              <li>
+                <%= link_to '削除', user_messagepost_path(current_user, @messagepost), method: :delete, class: "btn btn-default" %>
+              </li>
+            </ul>
+        </div>
+
+
+    <div class= "btn_position2"><a href="/users/<%= current_user.id %>/messageposts/<%= @messagepost.id %>.pdf" class= "btn btn-primary">登録情報を印刷する</a>
+    </div>
+
+
+    <div class= "btn_position2">
+      <a href="/users/<%= current_user.id %>/messageposts">メッセージ一覧へ戻る</a>
+    </div>
+
+</div>

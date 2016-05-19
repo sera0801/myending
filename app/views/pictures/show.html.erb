@@ -1,0 +1,20 @@
+<div class="users_content">
+<div class= "picture_index contents">
+
+
+
+
+    <div>
+      <p><%= @picture.title %></p>
+      <img src="<%= @picture.portrait %>">
+      <div class= "btn_position1 btn btn-default">
+    <%= link_to '削除', user_picture_path(current_user, @picture), method: :delete%>
+    </div>
+    </div>
+
+    <div class= "btn_position2">
+      <a href="/users/<%= current_user.id %>/pictures">写真一覧へ戻る</a>
+    </div>
+
+</div>
+</div>

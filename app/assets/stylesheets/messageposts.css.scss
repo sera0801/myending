@@ -74,3 +74,21 @@ div.letter{
   text-decoration: underline;
 }
 
+
+
+// .messageposts a {
+//   color: black;
+// }
+
+.messageposts .letter_index a{
+  color: black;
+}
+
+.messageposts .letter_index a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.messageposts .letter_index a div:hover {
+  background-color: #FFFFF0;
+}

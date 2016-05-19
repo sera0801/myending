@@ -118,6 +118,14 @@ WHO（世界保健機構）や国連の定義によると、</br>
 </div>
 
 
+<div class= "btn_position2">
+        <% if user_signed_in? %>
+          <%= link_to "マイページへ", "users/#{current_user.id}", method: :get, class: "btn btn-warning btn-lg" %>
+        <% else %>
+        <%= link_to "ユーザー登録する", new_user_registration_path, class: "emphasis_box", class: "btn btn-warning btn-lg" %>
+        <% end %>
+</div>
+
 
 
   </br>

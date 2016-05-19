@@ -18,6 +18,10 @@ class PicturesController < ApplicationController
       picture.destroy
     end
 
+    def show
+      @picture = Picture.find(params[:id])
+    end
+
     private
     def picture_params
       params.require(:picture).permit(:title, :portrait).merge(user_id: current_user.id)

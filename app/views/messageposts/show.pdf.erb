@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <%= wicked_pdf_stylesheet_link_tag asset_path("wickedpdf/cssstyle") %>
+</head>
+
+
+<body>
+
+<div>
+    <h3><%= @messagepost.dear %> へ</h3>
+    <hr color= "gray">
+    <%= simple_format(@messagepost.text) %>
+</div>
+
+
+
+<!-- <footer>
+ <%= yield %>
+</footer> -->
+</body>
+</html>

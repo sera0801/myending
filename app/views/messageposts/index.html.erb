@@ -3,33 +3,25 @@
 
     <h1>残しているメッセージ</h1>
 
-    <div>
+    <div class= "letter_index">
       <% current_user.messageposts.each do |messagepost| %>
 
+      <a href= "/users/<%= current_user.id %>/messageposts/<%=messagepost.id %>">
         <div class="letter">
             <h3><%= messagepost.dear %> へ</h3>
             <hr color= "gray">
-            <%= simple_format(messagepost.text) %>
+            <p class="letter_text"><%= messagepost.text %><p>
         </div>
 
-        <div class="clearfix btn_position">
-            <ul>
-              <li>
-                <%= link_to '編集', edit_user_messagepost_path(current_user, messagepost), method: :get, class: "btn btn-default" %>
-              </li>
-              <li>
-                <%= link_to '削除', user_messagepost_path(current_user, messagepost), method: :delete, class: "btn btn-default" %>
-              </li>
-            </ul>
-        </div>
       <% end %>
+      </a>
     </div>
 
 
 
     <div class= "btn_position2">
-      <a href="/users/<%= current_user.id %>/messageposts/new" class= "btn btn-primary btn-lg">メッセージを作成する</a>
+      <a href="/users/<%= current_user.id %>/messageposts/new" class= "btn btn-primary btn-lg" style= "color:white;">メッセージを作成する</a>
     </div>
 
 </div>
-<div class="users_content">
+</div>
