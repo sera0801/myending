@@ -1,5 +1,14 @@
 <div class="users_content">
 
+<% if @messagepost.errors.any? %>
+<ul>
+    <% @messagepost.errors.full_messages.each do |msg| %>
+      <li style= "list-style-type:none; color: red; margin: 30px 0 0 0;"><%= msg %></li>
+    <% end %>
+</ul>
+<% end %>
+
+
 <div class= "messageposts_new contents">
     <%= form_for [@user, @messagepost] do |f| %>
         <div>

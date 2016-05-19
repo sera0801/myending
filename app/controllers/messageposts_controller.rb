@@ -10,7 +10,11 @@ class MessagepostsController < ApplicationController
     end
 
     def create
-      Messagepost.create(messagepost_params)
+      @messagepost= Messagepost.create(messagepost_params)
+      @user= current_user
+      if @messagepost.errors.any?
+        render :new
+      end
     end
 
     def destroy
